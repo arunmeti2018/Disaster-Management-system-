@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescue Hub</title>
+    <script src="https://kit.fontawesome.com/6945e293bd.js" crossorigin="anonymous"></script>
+  
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">Ai</span>
+        <span class="material-symbols-outlined">X</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">Ai</span>
+                <p>Hi there <br>How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+    </div>
+
+
+    <div class="page">
+
+
+
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Rescue Hub</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#section1" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section3" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section4" class="nav-link">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/donations/donation.html" class="nav-link">Donations</a>
+                    </li>
+                    <div class="login-logout ">
+                        <i class="fa-solid fa-user hidden" id="userIcon"></i>
+                        <button class="login-btn button" id="authButton" onclick="document.location=`/login/login.html`">Login</button>
+                    </div>
+                    
+                </ul>
+
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+
+        <main>
+            <section id="section1" class="weather-fore-cast">
+                <h1>Weather Dashboard</h1>
+                <div class="container">
+                    <div class="weather-input">
+                        <h3>Enter a City Name</h3>
+                        <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+                        <button class="search-btn">Search</button>
+                        <div class="separator"></div>
+                        <button class="location-btn">Use Current Location</button>
+                    </div>
+                    <div class="weather-data">
+                        <div class="current-weather">
+                            <div class="details">
+                                <h2>_______ ( ______ )</h2>
+                                <h6>Temperature: __°C</h6>
+                                <h6>Wind: __ M/S</h6>
+                                <h6>Humidity: __%</h6>
+                            </div>
+                        </div>
+                        <div class="days-forecast">
+                            <h2>5-Day Forecast</h2>
+                            <ul class="weather-cards">
+                                <li class="card">
+                                    <h3>( ______ )</h3>
+                                    <h6>Temp: __C</h6>
+                                    <h6>Wind: __ M/S</h6>
+                                    <h6>Humidity: __%</h6>
+                                </li>
+                                <li class="card">
+                                    <h3>( ______ )</h3>
+                                    <h6>Temp: __C</h6>
+                                    <h6>Wind: __ M/S</h6>
+                                    <h6>Humidity: __%</h6>
+                                </li>
+                                <li class="card">
+                                    <h3>( ______ )</h3>
+                                    <h6>Temp: __C</h6>
+                                    <h6>Wind: __ M/S</h6>
+                                    <h6>Humidity: __%</h6>
+                                </li>
+                                <li class="card">
+                                    <h3>( ______ )</h3>
+                                    <h6>Temp: __C</h6>
+                                    <h6>Wind: __ M/S</h6>
+                                    <h6>Humidity: __%</h6>
+                                </li>
+                                <li class="card">
+                                    <h3>( ______ )</h3>
+                                    <h6>Temp: __C</h6>
+                                    <h6>Wind: __ M/S</h6>
+                                    <h6>Humidity: __%</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="section3" class="disaster-education ">
+                <div class="head-line">
+                    <h1>Disaster Preparedness Education</h1>
+
+                </div>
+
+
+                <div class="education-cards alert-cards">
+                    <div class="alert-card">
+                        <h3>Emergency Kits</h3>
+                        <p>Prepare a comprehensive emergency kit to ensure you have the necessary supplies.</p>
+                        <div class="warning-info">
+                            <div class="icon">
+
+                                <img src="https://img.icons8.com/?size=100&id=V4Ku63FofJd9&format=png&color=000000"
+                                    alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Build an Emergency plan</h3>
+                                <p>Learn what to include in your emergency kit</p>
+                            </div>
+                        </div>
+                        
+                        <button onclick="  document.location=`https://youtu.be/KKN7Ewht1DQ?si=xpYohSV0XrH1eVLV ` ">
+                            Watch
+                            Tutorial</button>
+                    </div>
+                    <div class="alert-card">
+                        <h3>Evacuation Planning</h3>
+                        <p>Develop a comprehensive evacuation plan to ensure your family's safety.</p>
+                        <div class="warning-info">
+                            <div class="icon">
+
+                                <img src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Create Evacuation Plan</h3>
+                                <p>Learn to do a succcesful evacuation</p>
+                            </div>
+                        </div>
+                        <button onclick=" document.location=` https://youtu.be/5-YqX7jw7MU?si=8Td8eJy7iJT22YTC` ">Watch
+                            Tutorial</button>
+                    </div>
+
+
+                    <div class=" alert-card">
+                        <h3>First Aid Basics</h3>
+                        <p>Acquire essential first aid knowledge to respond effectively during emergencies</p>
+                        <div class="warning-info">
+                            <div class="icon">
+
+                                <img src="https://img.icons8.com/?size=100&id=950&format=png&color=000000" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Learn First-Aid</h3>
+                                <p>Discover the fundamentals of providing first aid during a disaster</p>
+                            </div>
+                        </div>
+                        <button onclick=" document.location=` https://youtu.be/vqfIU9CVbNI?si=xLIbEE1AeecltnS3` ">Watch
+                            tuturial</button>
+                    </div>
+
+                </div>
+            </section>
+            <section id="section2" class="disaster-dashboard section2">
+                <div class="head-line">
+
+                    <h1>Disaster Dashboard</h1>
+
+                </div>
+                <div class="alert-cards">
+                    <div class="alert-card">
+                        <h3>Severe Weather Alert</h3>
+                        <p>A severe thunderstorm warning has been issued for your area.</p>
+                        <div class="warning-info">
+                            <div class="icon">
+
+                                <img src="https://img.icons8.com/ios/50/000000/storm.png" alt="Thunderstorm Icon">
+                            </div>
+                            <div class="details">
+                                <h4>Thunderstorm Warning</h4>
+                                <p>Issued at 3:15 PM, valid until 6:00 PM</p>
+                            </div>
+                        </div>
+                        <button>
+                            <a
+                                href="https://www.weather.gov/bmx/sps_svrsafetyrules#:~:text=If%20caught%20outside%2C%20take%20shelter,to%20be%20struck%20by%20lightning">View
+                                Details</a> </button>
+                    </div>
+
+                    <div class="alert-card">
+                        <h3>Earthquake Alert</h3>
+                        <p>A 6.2 magnitude earthquake has been detected near your location.</p>
+                        <div class="warning-info">
+                            <div class="icon">
+
+                                <img src="https://cdn-icons-png.flaticon.com/512/44/44386.png" alt="img">
+
+                            </div>
+                            <div class="details">
+                                <h4>Earthquake Warning</h4>
+                                <p>Issued at 3:15 PM, valid until 6:00 PM</p>
+                            </div>
+                        </div>
+                        <button><a href="https://riseq.seismo.gov.in/riseq/earthquake ">View Details </a></button>
+                    </div>
+                    <div class="alert-card">
+                        <h3>Wildfire Warning</h3>
+                        <p>A wildfire has been reported in a nearby area, prompting evacuation orders.</p>
+                        <div class="warning-info">
+                            <div class="icon">
+
+                                <img src="https://img.icons8.com/?size=100&id=10022&format=png&color=000000" alt="img">
+                            </div>
+                            <div class="details">
+                                <h4>Thunderstorm Warning</h4>
+                                <p>Issued at 3:15 PM, valid until 6:00 PM</p>
+                            </div>
+                        </div>
+                        <button> <a href="https://www.alertwildfire.org/">View Details</a></button>
+                    </div>
+
+                </div>
+            </section>
+
+            <br>
+            <section class="fore-cast-map">
+                <div class="map">
+                    <iframe src="https://ksndmc.org:122/" frameborder="0"></iframe>
+                </div>
+            </section>
+
+            <br>
+            <section id="section4" class="disaster-resources  ">
+                <div class="head-line">
+                    <h1>Disaster Resources</h1>
+
+                </div>
+                <div class="alert-cards">
+
+
+                    <div class=" alert-card">
+                        <h3>Emergency Contacts</h3>
+
+                        <div class="warning-info">
+                            <div class="icon">
+
+                                <img src="https://img.icons8.com/?size=100&id=9660&format=png&color=000000" alt="">
+                            </div>
+                            <div class="details">
+                                <p>Keep important emergency contact information at your fingertips.</p>
+                            </div>
+                        </div>
+                        <button> <a href="resources/emergency_details.pdf">Download Guide</a>
+                        </button>
+                    </div>
+
+                    <div class=" alert-card">
+                        <h3>Disaster Checklists</h3>
+
+                        <div class="warning-info">
+                            <div class="icon">
+
+                                <img src="https://img.icons8.com/?size=100&id=3979&format=png&color=000000" alt="">
+                            </div>
+                            <div class="details">
+
+                                <p>Access customizable checklists to ensure you're prepared for any emergency.</p>
+                            </div>
+                        </div>
+
+                        <button><a href="resources/EmergencyPreparednessChecklist.pdf">Download Checklists </a></button>
+                    </div>
+
+                    <div class=" alert-card">
+                        <h3>Relief Organizations</h3>
+
+                        <div class="warning-info">
+                            <div class="icon">
+
+                                <img src="https://img.icons8.com/?size=100&id=9166&format=png&color=000000" alt="">
+                            </div>
+                            <div class="details">
+                                <p>Find information on local and national relief organizations to support during
+                                    disasters.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <button><a href="resources/ngos.pdf">View Directory</a></button>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer>
+            <div class="container-footer">
+                <div class="contact-form">
+                    <h2>Get in Touch</h2>
+                    <p>Have a question or want to work together? Fill out the form below and we'll get back to you as
+                        soon as possible.</p>
+                    <form id="form">
+                        <div class="field">
+                            <label for="from_name">Name</label>
+                            <input type="text" name="from_name" id="from_name">
+                        </div>
+                        <div class="field">
+                            <label for="reply_to">Email</label>
+                            <input type="text" name="from_email" id="from_email">
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <input type="text" name="message" id="message">
+                        </div>
+
+                        <input type="submit" id="button" value="Send Email">
+                    </form>
+
+                </div>
+                <div class="useful-links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section3">Education</a></li>
+                        <li><a href="#section3">Services</a></li>
+                        <li><a href="donations/donation.html">Donate</a></li>
+                    </ul>
+                </br>
+                    <div>
+                        <h3>Find us here!</h3>
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9419644988807!2d77.58406837484146!3d12.975563787340187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1672fcfc6af1%3A0x9c2dc517c9231979!2sUVCE!5e0!3m2!1sen!2sin!4v1723330516403!5m2!1sen!2sin"
+                        width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+                </div>
+                
+            <p>© 2024 Rescue Hub. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script src="weather.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('UhpatOxoq-p2UefL7') </script>
+</body>
+
+
+
+</html>
